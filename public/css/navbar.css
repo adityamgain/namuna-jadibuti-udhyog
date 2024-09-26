@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+  .navbar-inverse {
+    background: #222B31 !important;
+    border-bottom: 4px solid #EE445F !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    height: 50px;
+  }
+
+  .nav-section {
+    margin-top: 30px; /* Same as the navbar height */
+  }
+  
+  .navbar-brand {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif !important;
+    text-transform: uppercase;
+    color: #FFF !important;
+    letter-spacing: 2px;
+    margin-top: 2px;
+  }
+  
+  .nav {
+    margin-bottom: 0px;
+  }
+  
+  .nav a {
+    font-weight: 500;
+    font-size: 11px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    padding: 16px !important;
+    color: #a3bfc6 !important;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .nav a:hover {
+    color: #FFF !important;
+  }
+  
+  .nav li {
+    position: relative;
+  }
+  
+  .navbar-inverse .navbar-toggle {
+    border: none;
+  }
+  
+  .navbar-collapse {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  .navbar-inverse .navbar-toggle:hover,
+  .navbar-inverse .navbar-toggle:focus,
+  .navbar-inverse .navbar-toggle:active {
+    background: transparent !important;
+  }
+  
+  .icon-bar {
+    background: #a3bfc6 !important;
+  }
+  
+  .hover {
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  
+  @media (max-width: 767px) {
+    .nav {
+      padding-bottom: 20px;
+    }
+  
+    .nav a {
+      padding: 12px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav {
+      padding-bottom: 20px;
+    }
+  }
+  

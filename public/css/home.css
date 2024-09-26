@@ -1,0 +1,159 @@
+.home-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-image {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #222B31 95%),
+    url('https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332515/IMG_9780_kthmmf.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quote h4 {
+    font-size: 5vw;
+    justify-content: center;
+    margin-top: 32%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #EE445F;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home-page button {
+    background-color: #ee445f;
+    color: rgb(253, 253, 253);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-page button:hover {
+    background-color: #d73b52; /* Darker shade for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.three-column-section {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items to the start */
+    padding: 20px; /* Add some padding */
+    background-color: #222B31; /* Background color for the section */
+}
+
+.column1, .column2, .column3 {
+    flex: 1; /* Each column takes equal space */
+    margin: 5px; /* Add margin between columns */
+    font-size: 1.7rem;
+    color: aliceblue;
+    padding: 10px; /* Add padding inside each column */
+    background-color: #222B31; /* Background color for each column */
+}
+
+.column1, .column3 {
+    flex: 0 0 25%; /* 20% width for the first and third columns */
+}
+
+.column2 {
+    flex: 0 0 50%; /* 60% width for the second column */
+}
+
+.column1 h3{
+    color:#EE445F ;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.columna h3{
+    color:#EE445F ;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.column3 img{
+    width:60%;
+}
+
+.columnb img{
+    width: 220px;
+}
+
+
+.two-column-section {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items to the start */
+    padding: 20px; /* Add some padding */
+    background-color: #222B31; /* Background color for the section */
+    border-bottom: 4px solid #EE445F !important;
+
+}
+
+.columna, .columnb {
+    flex: 1; /* Each column takes equal space */
+    margin: 5px; /* Add margin between columns */
+    font-size: 1.7rem;
+    color: aliceblue;
+    padding: 10px; /* Add padding inside each column */
+    background-color: #222B31; /* Background color for each column */
+}
+
+.columna{
+    flex: 0 0 20%; /* 20% width for the first and third columns */
+}
+
+.columnb{
+    flex: 0 0 80%; /* 20% width for the first and third columns */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Card styles */
+.card-places {
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row, adjust the 20px gap */
+    flex-basis: 18rem; /* Ensures each card has a fixed width */
+    flex-grow: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    text-align: center;
+
+}
+
+.card-places:hover {
+    transform: translateY(-10px); /* Lifts the card slightly */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+
+
+.card-places img {
+    width: 260px;
+    height: 280px;
+    border-radius: 8px 8px 0 0; /* Rounded top corners for the image */
+}
+
+.card-places-body {
+    padding: 1rem;
+    background-color:#2d3a42;
+}
+
+.card-text {
+    font-size: 2rem;
+    font-weight: 300;
+    color:aliceblue;
+}

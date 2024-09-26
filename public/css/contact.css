@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contactus {
+    background-color: #2f3941;
+    margin: 0;
+    padding-top: 0;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center; /* Aligns both elements horizontally */
+    align-items: center; /* Aligns both elements vertically */
+    max-width: 1200px;
+    width: 100%;
+    height: 100%; /* Ensures full height */
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Contact form styling */
+.contact-form {
+    flex: 1;
+    max-width: 45%;
+    height: 40%;
+    color: rgb(5, 14, 22);
+    background-color: #758899;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Form input styles */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(151, 147, 147);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Added spacing between form fields */
+}
+
+/* Input focus state */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ee445f;
+    box-shadow: 0 0 5px rgba(238, 68, 95, 0.5);
+}
+
+.contact-form button {
+    background-color: #ee445f;
+    color: rgb(253, 253, 253);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+    background-color: #d93a54;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Google Map container styling */
+.map-container {
+    flex: 1;
+    max-width: 45%;
+    height: 65%;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 430px; /* Consider changing this to vh for responsiveness */
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .contact-form, .map-container {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .map-container iframe {
+        height: 50vh; /* Adjusts map height for mobile */
+    }
+}

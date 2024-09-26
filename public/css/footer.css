@@ -1,0 +1,100 @@
+/* Footer Styles */
+
+.footer {
+    width: 100%; /* Ensure it spans the entire width */
+    background-color: #222B31;
+    border-top: 4px solid #EE445F !important;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat font is used */
+    z-index: 100; /* Ensure the footer appears above other content */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.footer-section h3 {
+    color:rgb(236, 225, 204);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.contact p{
+    line-height: 0.8;
+}
+
+.contact h3{
+    margin-bottom: 3rem;
+} 
+
+.links h3{
+    margin-bottom: 2rem;
+} 
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #EE445F;
+}
+
+.footer-bottom {
+    padding: 1rem;
+    border-top: 1px solid #444;
+    margin-top: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+img{
+    width: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namuna Jadibuti Udhyog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/home.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Include Navbar Partial -->
+    <%- include('partials/navbar') %>
+
+    <!-- Main Content Area -->
+    <div class="home-page">
+        <div class="hero-image">
+            <div class="quote">
+                <h4>"Harnessing Nature's Power for Health and Wellness"</h4><br>
+            </div>
+            <a href="/aboutus" role="button"><button>Explore..</button></a>  
+        </div>
+    </div>
+
+<section class="two-column-section">
+    <div class="columna">
+        <h3>Our Products</h3>
+    </div>
+    <div class="columnb">
+                <div class="card-places">
+                    <img class="card-img-top" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332519/IMG_9782_xhd24b.jpg" alt="Card image cap">
+                    <div class="card-places-body">
+                        <p class="card-text">Harro</p>
+                    </div>
+                </div>
+
+        <!-- Card 2 -->
+                <div class="card-places">
+                    <img class="card-img-top" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332519/IMG_9783_dqb9oi.jpg" alt="Card image cap">
+                    <div class="card-places-body">
+                        <p class="card-text">Barro</p>
+                    </div>
+                </div>
+
+        <!-- Card 3 -->
+                <div class="card-places">
+                    <img class="card-img-top" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332519/IMG_9777_zlo5f0.jpg" alt="Card image cap">
+                    <div class="card-places-body">
+                        <p class="card-text">Amla</p>
+                    </div>
+                </div>
+
+        <!-- Card 4 -->
+                <div class="card-places">
+                    <img class="card-img-top" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332514/IMG_9774_fsfvmk.jpg" alt="Card image cap">
+                    <div class="card-places-body">
+                        <p class="card-text">Mixed Herbs</p>
+                    </div>
+                </div>
+                
+    </div>
+</section>
+
+<section class="three-column-section">
+    <div class="column1">
+        <h3>Message from our chairperson</h3>
+    </div>
+    <div class="column2">
+I am pleased to connect with you on behalf of Namuna Jadibuti. Our commitment to quality and sustainability drives our herb processing, allowing us to produce high-quality herbal products that benefit both our customers and local farmers.
+<p>At Namuna Jadibuti, we focus on sourcing the finest herbs while employing environmentally friendly practices. Our innovative processing techniques ensure that the natural properties of the herbs are preserved, allowing us to offer a wide range of herbal products that promote health and wellness.
+<p>Your support helps us grow and contribute positively to our community and the environment.
+    </div>
+    <div class="column3">
+            <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727359891/Subject_hi9753.png" alt="">
+    </div>
+</section>
+
+    <!-- Include Footer Partial -->
+    <%- include('partials/footer') %>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
