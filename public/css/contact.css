@@ -10,33 +10,53 @@ html, body {
     padding: 0;
 }
 
+
 .contactus {
-    background-color: #2f3941;
-    margin: 0;
-    padding-top: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items to the start */
+    padding: 20px; /* Add some padding */
+    background-color: rgb(247, 252, 243);
+
 }
 
-.container-contact {
-    display: flex;
-    justify-content: center; /* Aligns both elements horizontally */
-    align-items: center; /* Aligns both elements vertically */
-    max-width: 1200px;
-    width: 100%;
-    height: 100%; /* Ensures full height */
-    padding: 40px;
-    box-sizing: border-box;
+.container-contact, .map-container {
+    flex: 1; /* Each column takes equal space */
+    margin: 5px; /* Add margin between columns */
+    font-size: 1.7rem;
+    color: aliceblue;
+    padding: 10px; /* Add padding inside each column */
+    background-color: rgb(247, 252, 243);
+    justify-content: center;
 }
+
+.container-contact{
+    flex: 0 0 50%; /* 20% width for the first and third columns */
+}
+
+.map-container{
+    flex: 0 0 50%; /* 20% width for the first and third columns */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
 
 /* Contact form styling */
-.contact-form {
-    flex: 1;
-    max-width: 45%;
-    height: 40%;
-    color: rgb(5, 14, 22);
-    background-color: #758899;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.contact-form h2{
+    text-align: center;
+    color:#98a869;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.map-container h2{
+    color:#98a869;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
 }
 
 /* Form input styles */
@@ -54,41 +74,33 @@ html, body {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #ee445f;
-    box-shadow: 0 0 5px rgba(238, 68, 95, 0.5);
+    border-color: #98a869;
+    box-shadow: 0 0 5px rgba(129, 180, 46, 0.5);
 }
 
 .contact-form button {
-    background-color: #ee445f;
+    background-color: #98a869;
     color: rgb(253, 253, 253);
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Button hover effect */
 .contact-form button:hover {
-    background-color: #d93a54;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #1f5023; /* Darker shade for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 /* Google Map container styling */
-.map-container {
-    flex: 1;
-    max-width: 45%;
-    height: 65%;
-    margin: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
 
 .map-container iframe {
     width: 100%;
-    height: 430px; /* Consider changing this to vh for responsiveness */
+    height: 400px; /* Consider changing this to vh for responsiveness */
     border: none;
+    text-align: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -100,4 +112,31 @@ html, body {
     .map-container iframe {
         height: 50vh; /* Adjusts map height for mobile */
     }
+}
+
+.top-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Ensure the background image covers the area responsively */
+.top-image {
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(131, 131, 131, 0) 60%, rgb(247, 252, 243) 100%), 
+    url('https://res.cloudinary.com/dgdbgblvb/image/upload/v1727607557/IMG_9809_wkx9zx.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

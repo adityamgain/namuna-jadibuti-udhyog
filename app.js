@@ -27,6 +27,10 @@ app.get('/aboutus', async(req, res) => {
   res.render('aboutus');
 });
 
+app.get('/products', async(req, res) => {
+  res.render('product');
+});
+
 app.get('/teams', async(req, res) => {
     res.render('teams');
   });
@@ -35,6 +39,6 @@ app.get('/contact', async(req, res) => {
     res.render('contact');
 });
 
-app.listen(4000, () => {
+app.listen(4001, () => {
     console.log(`CONNECTED TO DB AND SERVER START ON ${4000}`);
 });

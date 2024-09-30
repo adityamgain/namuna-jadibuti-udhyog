@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product{
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2px;
+}
+
+.product .title{
+    color:#98a869 ;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.excursion-wrapper {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height:280px;
+    margin:2%;
+    background-color: rgb(243, 252, 238);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.excursion-image {
+    flex: 1;
+}
+
+.excursion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.excursion-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.excursion-title {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.excursion-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.excursion-buttons {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-email, .btn-call {
+    padding: 10px 11px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-email {
+    background-color: #c44a34;
+}
+
+.btn-call {
+    margin: 0;
+    background-color: #d96a35;
+}
+
+.btn-call p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.btn-email:hover {
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #a73a2a;
+}
+
+.btn-call:hover {
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #b95b2e;
+}
+
+

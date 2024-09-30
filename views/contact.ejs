@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/contact.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -17,10 +21,10 @@
     <%- include('partials/navbar') %>
 <br>
 
+
 <section class="contactus">
     <div class="container-contact">
-        <!-- Contact Us Form -->
-        <div class="contact-form">
+     <div class="contact-form">
             <h2>Contact Us</h2>
             <form>
                 <label for="name">Name:</label>
@@ -35,24 +39,27 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-
-        <!-- Google Map -->
-        <div class="map-container">
+    </div>
+    <div class="map-container">
+                <h2>Location</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1914.073386677762!2d84.09572650026504!3d27.629365454814632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39944f001ad284af%3A0x6262b116bf51fa8a!2sANSAB!5e0!3m2!1sen!2snp!4v1727264663778!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 allowfullscreen=""
                 loading="lazy">
             </iframe>
-        </div>
+                
     </div>
 </section>
 
 
+        <div class="top-page">
+            <div class="top-image"> 
+            </div>
+        </div>
 
     <!-- Include Footer Partial -->
     <%- include('partials/footer') %>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

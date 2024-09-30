@@ -12,7 +12,7 @@ html, body {
   
   .navbar-inverse {
     background: #222B31 !important;
-    border-bottom: 4px solid #EE445F !important;
+    border-bottom: 6px solid #98a869 !important;
     position: fixed;
     top: 0;
     width: 100%;
@@ -52,6 +52,10 @@ html, body {
   .nav a:hover {
     color: #FFF !important;
   }
+  .navbar-link.active {
+    font-weight: bold;
+    color: #FFF;
+}
   
   .nav li {
     position: relative;

@@ -7,7 +7,7 @@
 
 .hero-image {
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #222B31 95%),
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgb(247, 252, 243) 90%),
     url('https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332515/IMG_9780_kthmmf.jpg');
     top: 0;
     left: 0;
@@ -25,14 +25,14 @@
     top: 50%;
     left: 50%;
     text-align: center;
-    color: #EE445F;
+    color: #505c2c;
     font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
 .home-page button {
-    background-color: #ee445f;
+    background-color: #98a869;
     color: rgb(253, 253, 253);
     padding: 12px 20px;
     border: none;
@@ -41,7 +41,7 @@
 }
 
 .home-page button:hover {
-    background-color: #d73b52; /* Darker shade for hover effect */
+    background-color: #61b468; /* Darker shade for hover effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
@@ -50,16 +50,16 @@
     justify-content: space-between; /* Space between columns */
     align-items: flex-start; /* Align items to the start */
     padding: 20px; /* Add some padding */
-    background-color: #222B31; /* Background color for the section */
+    background-color: rgb(247, 252, 243);
 }
 
 .column1, .column2, .column3 {
     flex: 1; /* Each column takes equal space */
     margin: 5px; /* Add margin between columns */
     font-size: 1.7rem;
-    color: aliceblue;
+    color: #222B31;
     padding: 10px; /* Add padding inside each column */
-    background-color: #222B31; /* Background color for each column */
+    background-color: rgb(247, 252, 243);
 }
 
 .column1, .column3 {
@@ -70,16 +70,23 @@
     flex: 0 0 50%; /* 60% width for the second column */
 }
 
+.column2 strong{
+    font-family: "Orbitron", sans-serif;
+    color: #505c2c;
+}
+
 .column1 h3{
-    color:#EE445F ;
-    font-weight: 500;
+    color:#98a869 ;
+    font-family: "Orbitron", sans-serif;
     font-size: 4rem;
+    font-weight: 500;
 }
 
 .columna h3{
-    color:#EE445F ;
-    font-weight: 500;
+    color:#98a869 ;
+    font-family: "Orbitron", sans-serif;
     font-size: 4rem;
+    font-weight: 500;
 }
 
 .column3 img{
@@ -96,8 +103,8 @@
     justify-content: space-between; /* Space between columns */
     align-items: flex-start; /* Align items to the start */
     padding: 20px; /* Add some padding */
-    background-color: #222B31; /* Background color for the section */
-    border-bottom: 4px solid #EE445F !important;
+    background-color: rgb(247, 252, 243);
+    border-bottom: 4px solid #98a869 !important;
 
 }
 
@@ -107,7 +114,7 @@
     font-size: 1.7rem;
     color: aliceblue;
     padding: 10px; /* Add padding inside each column */
-    background-color: #222B31; /* Background color for each column */
+    background-color: rgb(247, 252, 243);
 }
 
 .columna{
@@ -149,11 +156,61 @@
 
 .card-places-body {
     padding: 1rem;
-    background-color:#2d3a42;
+    background-color: rgb(243, 252, 238);
 }
 
 .card-text {
     font-size: 2rem;
-    font-weight: 300;
-    color:aliceblue;
+    font-weight: 400;
+    color:#222B31;
 }
+
+
+#sustainability {
+    background-color: rgb(247, 252, 243);
+    padding: 40px 20px;
+    border-bottom:4px solid #98a869 !important;
+}
+
+
+  
+  .sustainability-hero h2 {
+    padding-left:2%;
+    color:#98a869 ;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  
+  .sustainability-key-points p {
+    font-size: 1.7rem;
+    margin:2%;
+  }
+  
+  .sustainability-key-points {
+    margin-top: 30px;
+  }
+  
+  .sustainability-key-points h3 {
+    padding-left:2%;
+    font-size: 2.8rem;
+    color: #98a869;
+  }
+  
+  .sustainability-key-points ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sustainability-key-points li {
+    padding-left:5%;
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  
+  .sustainability-key-points strong{
+    color: #505c2c;
+    font-family: "Orbitron", sans-serif;
+  } 
+
+  

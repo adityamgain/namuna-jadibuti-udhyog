@@ -7,17 +7,38 @@ html, body {
 
 /* Team Section */
 .team-section {
-    background-color: #222B31;
+    background-color: rgb(247, 252, 243);
     text-align: center;
-    padding: 50px 0;
+    padding: 1px 0;
+    margin: 0;
+}
+
+.team-section .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .section-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: rgb(138, 137, 137);
+    font-family: "Orbitron", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color:#98a869;
     margin-bottom: 50px;
     letter-spacing: 2px;
+    margin:0;
+}
+
+.logo{
+    background-color: rgb(247, 252, 243);
+    text-align: center;
+}
+
+.logo img{
+    width:20%;
+    margin-top:2%;
 }
 
 /* Team Grid */
@@ -34,10 +55,11 @@ html, body {
 
 /* Team Member Card */
 .team-member {
-    background-color: #47545e;
+    background-color: rgb(243, 252, 238);
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    width: 200px;
+    height:280px;
     padding: 20px;
     transition: transform 0.3s ease;
     position: relative;
@@ -48,22 +70,23 @@ html, body {
 }
 
 .team-img {
-    width: 80%;
+    width: 60%;
     border-radius: 40%;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .team-name {
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 10px;
-    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    color: #222B31;
 }
 
 .team-position {
-    font-size: 16px;
+    font-size: 15px;
+    font-family: "Orbitron", sans-serif;
     color: rgb(245, 124, 124);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 
@@ -78,3 +101,8 @@ html, body {
         width: 80%;
     }
 }
+
+
+
+
+

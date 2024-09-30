@@ -3,7 +3,7 @@
 .footer {
     width: 100%; /* Ensure it spans the entire width */
     background-color: #222B31;
-    border-top: 4px solid #EE445F !important;
+    border-top: 6px solid #98a869 !important;
     color: #fff;
     padding: 2rem 0;
     text-align: center;
@@ -28,8 +28,8 @@
 }
 
 .footer-section h3 {
-    color:rgb(236, 225, 204);
-    font-size: 1.6rem;
+    color:#7e9638;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
@@ -41,6 +41,7 @@
 }
 .contact p{
     line-height: 0.8;
+    color: #fff;
 }
 
 .contact h3{
@@ -68,7 +69,7 @@
 }
 
 .footer-section ul li a:hover {
-    color: #EE445F;
+    color: #38e621;
 }
 
 .footer-bottom {
