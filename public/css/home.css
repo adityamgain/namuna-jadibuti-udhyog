@@ -21,9 +21,8 @@
 .quote h4 {
     font-size: 5vw;
     justify-content: center;
-    margin-top: 32%;
-    top: 50%;
-    left: 50%;
+    margin-top: 35%;
+
     text-align: center;
     color: #505c2c;
     font-family: "Coiny", system-ui;
@@ -50,7 +49,8 @@
     justify-content: space-between; /* Space between columns */
     align-items: flex-start; /* Align items to the start */
     padding: 20px; /* Add some padding */
-    background-color: rgb(247, 252, 243);
+    background-color: white;
+    margin-top: 0;
 }
 
 .column1, .column2, .column3 {
@@ -59,7 +59,7 @@
     font-size: 1.7rem;
     color: #222B31;
     padding: 10px; /* Add padding inside each column */
-    background-color: rgb(247, 252, 243);
+    background-color: white;
 }
 
 .column1, .column3 {
@@ -104,8 +104,7 @@
     align-items: flex-start; /* Align items to the start */
     padding: 20px; /* Add some padding */
     background-color: rgb(247, 252, 243);
-    border-bottom: 4px solid #98a869 !important;
-
+    border-bottom: 4px solid #98a869 ;
 }
 
 .columna, .columnb {
@@ -160,26 +159,28 @@
 }
 
 .card-text {
-    font-size: 2rem;
-    font-weight: 400;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
     color:#222B31;
 }
 
 
 #sustainability {
     background-color: rgb(247, 252, 243);
-    padding: 40px 20px;
-    border-bottom:4px solid #98a869 !important;
+    padding:4%;
+    border-bottom: 4px solid #98a869 ;
+    border-top: 4px solid #98a869 ;
 }
-
-
   
-  .sustainability-hero h2 {
+  .sustainability-hero h3 {
+      margin-top: 0;
     padding-left:2%;
     color:#98a869 ;
     font-family: "Orbitron", sans-serif;
     font-size: 4rem;
     font-weight: 500;
+    text-align: center;
   }
   
   .sustainability-key-points p {
@@ -191,21 +192,23 @@
     margin-top: 30px;
   }
   
-  .sustainability-key-points h3 {
+  .sustainability-key-points h4 {
     padding-left:2%;
     font-size: 2.8rem;
     color: #98a869;
   }
   
   .sustainability-key-points ul {
+    background-color: rgb(247, 252, 243);
     list-style-type: none;
+    margin-bottom: 0;
     padding: 0;
   }
   
   .sustainability-key-points li {
     padding-left:5%;
     font-size: 1.8rem;
-    margin: 10px 0;
+    margin:0;
   }
   
   .sustainability-key-points strong{
@@ -213,4 +216,138 @@
     font-family: "Orbitron", sans-serif;
   } 
 
+  .svg-section{
+      background-color: rgb(247, 252, 243);
+  }
+
+  .svg-section-bottom{
+    background-color: rgb(247, 252, 243);
+    padding: 0;
+  }
+
+  .svg-section svg{
+      fill:#98a869;
+  }
   
+  .svg-section-bottom svg{
+    transform: rotate(180deg);
+    fill:#98a869;
+}
+
+.flowchart {
+    width:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flowchart h3{
+    color:#98a869 ;
+    padding-top:4%;
+    font-family: "Orbitron", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.flowchart img{
+    padding:2%;
+    margin-bottom: 4%;
+    width:50%;
+}
+
+/* Media Queries for Tablets */
+/* Responsive Styles (Mobile & Tablets) */
+@media (max-width: 768px) {
+    h3{
+        font-size: 2.2rem;
+    }
+
+    /* Adjust product section for two images in a row */
+    .row {
+        flex-wrap: wrap; /* Allow wrapping for responsive layout */
+        justify-content: center; /* Center content */
+    }
+
+    .card-places {
+        flex: 0 0 calc(45% - 20px); /* Two cards per row with spacing */
+        margin: 10px; /* Margin between cards */
+        max-width: 100%; /* Ensure cards fit within the container */
+    }
+
+    .card-places img {
+        width: 100%; /* Image takes full width in responsive mode */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+
+    /* Three-column section into one column */
+    .three-column-section {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .column1, .column2, .column3 {
+        flex: 1 0 100%; /* Make each column take full width */
+        margin: 10px 0; /* Add margin between columns */
+    }
+
+    /* Adjust padding and margin for smaller screens */
+    .home-page button {
+        padding: 10px 15px;
+        margin-top: 90%; /* Adjust spacing */
+
+    }
+
+    .two-column-section {
+        flex-direction: column; /* Stack columns in two-column-section */
+    }
+
+    .columna, .columnb {
+        flex: 1 0 100%; /* Make columns take full width */
+        margin-bottom: 20px; /* Add spacing between stacked sections */
+    }
+
+    /* Adjust the flowchart images to stack below text */
+    .flowchart img {
+        width: 80%; /* Reduce size for smaller screens */
+    }
+
+    /* Keep the quote at the bottom */
+    .quote {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: #505c2c; /* Ensure readability */
+    }
+
+    .quote h4 {
+        margin-top: 40%; /* Adjust spacing */
+        font-size: 5vw; /* Responsive font size */
+    }
+}
+
+/* Adjust for very small screens */
+@media (max-width: 576px) {
+    .quote h4 {
+        font-size: 6vw; /* Responsive font size */
+        margin-top: 80%; /* Adjust spacing */
+    }
+    .home-page button {
+        margin-top: 95%; /* Adjust spacing */
+
+    }
+
+    h2, h3{
+        font-size: 2rem;
+    }
+
+    .three-column-section {
+        padding: 10px;
+    }
+
+    .card-places img {
+        width: 100%;
+        height: auto;
+    }
+}

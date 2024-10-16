@@ -10,52 +10,47 @@ html, body {
     padding: 0;
 }
 
-
+/* Contact Us Section */
 .contactus {
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Space between columns */
     align-items: flex-start; /* Align items to the start */
     padding: 20px; /* Add some padding */
     background-color: rgb(247, 252, 243);
-
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
+/* Contact and Map Containers */
 .container-contact, .map-container {
     flex: 1; /* Each column takes equal space */
     margin: 5px; /* Add margin between columns */
     font-size: 1.7rem;
-    color: aliceblue;
+    color: #333; /* Changed from aliceblue to a readable dark color */
     padding: 10px; /* Add padding inside each column */
     background-color: rgb(247, 252, 243);
     justify-content: center;
 }
 
-.container-contact{
-    flex: 0 0 50%; /* 20% width for the first and third columns */
+.container-contact {
+    flex: 0 0 48%; /* 48% width to allow spacing */
 }
 
-.map-container{
-    flex: 0 0 50%; /* 20% width for the first and third columns */
-    display: flex;
+.map-container {
+    flex: 0 0 48%; /* 48% width to allow spacing */
     flex-wrap: wrap;
     gap: 20px;
-}
-
-
-
-/* Contact form styling */
-.contact-form h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color:#98a869;
-    font-family: "Orbitron", sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
 }
 
-.map-container h2{
-    color:#98a869;
+/* Contact Form Styling */
+.contact-form h2, .map-container h2 {
+    text-align: center;
+    color: #98a869;
     font-family: "Orbitron", sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -67,7 +62,7 @@ html, body {
     border: 1px solid rgb(151, 147, 147);
     border-radius: 5px;
     box-sizing: border-box;
-    margin-bottom: 15px; /* Added spacing between form fields */
+    margin-bottom: 15px;
 }
 
 /* Input focus state */
@@ -78,9 +73,10 @@ html, body {
     box-shadow: 0 0 5px rgba(129, 180, 46, 0.5);
 }
 
+/* Submit Button Styles */
 .contact-form button {
     background-color: #98a869;
-    color: rgb(253, 253, 253);
+    color: #fff;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -89,45 +85,29 @@ html, body {
 
 /* Button hover effect */
 .contact-form button:hover {
-    background-color: #1f5023; /* Darker shade for hover effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    background-color: #1f5023;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Google Map container styling */
-
+/* Map Container Styles */
 .map-container iframe {
     width: 100%;
-    height: 400px; /* Consider changing this to vh for responsiveness */
+    height: 400px;
     border: none;
-    text-align: center;
-    align-items: center;
 }
 
-@media (max-width: 768px) {
-    .contact-form, .map-container {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-
-    .map-container iframe {
-        height: 50vh; /* Adjusts map height for mobile */
-    }
-}
-
+/* Top Page Section */
 .top-page {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
     color: #333;
 }
 
-/* Ensure the background image covers the area responsively */
+/* Background Image for Top Section */
 .top-image {
     position: absolute;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(131, 131, 131, 0) 60%, rgb(247, 252, 243) 100%), 
@@ -139,4 +119,60 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .contact-form h2, .map-container h2 {
+        font-size: 2.5rem; /* Smaller title size */
+    }
+
+    .map-container iframe {
+        height: 350px; /* Slightly smaller map for laptops */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust container for tablets */
+    .contactus {
+        flex-direction: column; /* Stack containers vertically */
+    }
+
+    .container-contact, .map-container {
+        flex: 0 0 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .contact-form h2, .map-container h2 {
+        font-size: 2.2rem; /* Reduce font size for smaller screens */
+    }
+
+    .map-container iframe {
+        text-align: center;
+        height: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for mobile devices */
+    .contactus {
+        flex-direction: column;
+    }
+
+    .container-contact, .map-container {
+        flex: 0 0 100%; /* Full width for mobile */
+        margin-bottom: 20px;
+    }
+
+    .contact-form h2, .map-container h2 {
+        font-size: 1.8rem; /* Smaller titles for mobile */
+    }
+
+    .map-container iframe {
+        height: 250px; /* Adjust map height for mobile */
+    }
+
+    .top-page {
+        height: 40vh; /* Adjust top section height for mobile */
+    }
 }

@@ -1,5 +1,4 @@
 /* General Reset */
-
 html, body {
     margin: 0;
     padding: 0;
@@ -9,11 +8,11 @@ html, body {
 .team-section {
     background-color: rgb(247, 252, 243);
     text-align: center;
-    padding: 1px 0;
+    padding: 20px 0; /* Added padding for better spacing */
     margin: 0;
 }
 
-.team-section .head{
+.team-section .head {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,32 +24,29 @@ html, body {
     font-family: "Orbitron", sans-serif;
     font-size: 4rem;
     font-weight: 500;
-    color:#98a869;
+    color: #98a869;
     margin-bottom: 50px;
     letter-spacing: 2px;
-    margin:0;
+    margin: 0;
 }
 
-.logo{
+.logo {
     background-color: rgb(247, 252, 243);
     text-align: center;
 }
 
-.logo img{
-    width:20%;
-    margin-top:2%;
+.logo img {
+    width: 20%;
+    margin-top: 2%;
 }
 
 /* Team Grid */
 .team-container {
-    margin:3% 10% 5%;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
+    margin: 3% auto; /* Centered container */
+    display: flex; /* Use flexbox for centering */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items horizontally */
+    gap: 40px; /* Space between items */
 }
 
 /* Team Member Card */
@@ -59,10 +55,13 @@ html, body {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 200px;
-    height:280px;
+    height: 280px;
     padding: 20px;
     transition: transform 0.3s ease;
-    position: relative;
+    display: flex; /* Center content vertically */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: space-between; /* Space between elements */
 }
 
 .team-member:hover {
@@ -71,6 +70,7 @@ html, body {
 
 .team-img {
     width: 60%;
+    max-height: 150px;
     border-radius: 40%;
     margin-bottom: 0;
 }
@@ -89,20 +89,60 @@ html, body {
     margin-bottom: 5px;
 }
 
-
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
+    .section-title {
+        font-size: 3rem; /* Adjust title size for smaller screens */
+        margin-bottom: 30px; /* Adjust margin for smaller screens */
+    }
+
     .team-container {
-        flex-direction: column;
-        align-items: center;
+        margin: 3% 5%; /* Adjust margins for smaller screens */
+        gap: 20px; /* Reduce gap for smaller screens */
     }
 
     .team-member {
-        width: 80%;
+        width: 160px; /* Adjust card width for smaller screens */
+        height: 240px; /* Adjust card height for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .team-name {
+        font-size: 20px; /* Adjust team name size */
+    }
+
+    .team-position {
+        font-size: 14px; /* Adjust position size */
+    }
+
+    .logo img {
+        width: 30%; /* Increase logo size for smaller screens */
     }
 }
 
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2.5rem; /* Further reduce title size */
+    }
 
+    .team-container {
+        margin: 3% 2%; /* Adjust margins for smaller screens */
+    }
 
+    .team-member {
+        width: 140px; /* Further adjust card width for smaller screens */
+        height: 220px; /* Further adjust card height for smaller screens */
+    }
 
+    .team-name {
+        font-size: 18px; /* Further adjust team name size */
+    }
 
+    .team-position {
+        font-size: 12px; /* Further adjust position size */
+    }
+
+    .logo img {
+        width: 40%; /* Increase logo size for very small screens */
+    }
+}

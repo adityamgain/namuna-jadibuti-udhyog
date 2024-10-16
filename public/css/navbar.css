@@ -93,6 +93,10 @@ html, body {
 
   
   @media (max-width: 767px) {
+    .navbar-brand {
+      font-size: 14px !important;
+    }
+
     .nav {
       padding-bottom: 20px;
     }
@@ -103,6 +107,10 @@ html, body {
   }
   
   @media (max-width: 480px) {
+    .navbar-brand {
+      font-size: 12px !important;
+    }
+
     .nav {
       padding-bottom: 20px;
     }

@@ -29,12 +29,42 @@ body {
     color:#2f3941;
 }
 
+.section-about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-about li{
+  padding-left:5%;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.section-about strong{
+  color: #505c2c;
+
+}
+
 .section-about h2{
   font-family: "Orbitron", sans-serif;
   font-size: 4rem;
   font-weight: 500;
     color:#98a869 ;
 }
+
+.section-about h3{
+  color: #505c2c;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+}
+
+.section-about strong{
+  color: #505c2c;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.6rem;
+
+}
+
 
   /* Timeline */
   
