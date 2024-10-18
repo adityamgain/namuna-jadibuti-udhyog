@@ -29,14 +29,15 @@
         <div class="hero-image">
             <div class="quote">
                 <h4>"Harnessing Nature's Power for Health and Wellness"</h4><br>
-            </div>
             <a href="/aboutus" role="button"><button>Explore..</button></a>  
         </div>
+    </div>
     </div>
 
 <section class="two-column-section">
     <div class="columna">
         <h3>Our Products</h3>
+        <a href="/products" class="read-all">View All Products</a>
     </div>
     <div class="columnb">
                 <div class="card-places">
@@ -56,7 +57,7 @@
 
         <!-- Card 3 -->
                 <div class="card-places">
-                    <img class="card-img-top" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332519/IMG_9777_zlo5f0.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727605114/IMG_9812_v5paas.jpg" alt="Card image cap">
                     <div class="card-places-body">
                         <p class="card-text">Chiuri</p>
                     </div>
@@ -74,7 +75,7 @@
 </section>
 <section class="flowchart">
     <h3>Production Flow Chart</h3>
-    <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729053281/Beige_and_Brown_Modern_Recruitment_Process_Flowchart_1_vxyoru.png" alt="">
+    <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729240515/Beige_and_Brown_Modern_Recruitment_Process_Flowchart_1_uo1bxq.jpg" alt="">
 </section>
 
 <section id="sustainability">
@@ -111,10 +112,51 @@ I am pleased to connect with you on behalf of Namuna Jadibuti. Our commitment to
     </div>
 </section>
 
+<section class="gallery-container">
+  <div class="container">
+    <h1 class="heading">Gallery</h1>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img class="gallery-image" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729239100/IMG_1640_fdact1.jpg" alt="">
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729239101/IMG_1622_awragj.jpg" alt="">
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729239092/IMG_2510_affrfk.jpg" alt="">
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729239098/IMG_2527_h5ylpy.jpg" alt="">
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729239097/IMG_2526_dlcpwx.jpg" alt="">
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729241924/IMG_1593_ddd0vu.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+</section>
+
+
+
 
     <!-- Include Footer Partial -->
     <%- include('partials/footer') %>
 
-    <script src="/js/script.js"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="/js/script.js"></script>
+
+
+
 </body>
 </html>

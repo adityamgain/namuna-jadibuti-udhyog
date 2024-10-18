@@ -19,23 +19,23 @@ app.use(express.json());
 
 
 app.get('/', async(req, res) => {
-    res.render('home');
+    res.render('home',{currentPage: 'none' });
   });
 
 app.get('/aboutus', async(req, res) => {
-  res.render('aboutus');
+  res.render('aboutus',{currentPage: 'aboutus' });
 });
 
 app.get('/products', async(req, res) => {
-  res.render('product');
+  res.render('product',{ currentPage: 'product' });
 });
 
 app.get('/teams', async(req, res) => {
-    res.render('teams');
+    res.render('teams',{ currentPage: 'team' });
   });
 
 app.get('/contact', async(req, res) => {
-    res.render('contact');
+    res.render('contacts',{ currentPage: 'contactus' });
 });
 
 app.listen(4001, () => {

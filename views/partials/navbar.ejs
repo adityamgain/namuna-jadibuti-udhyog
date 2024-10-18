@@ -17,10 +17,10 @@
 
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a class="navbar-link" href="/aboutus">About Us</a><span class="hover"></span></li>
-      <li><a class="navbar-link" href="/products">Products</a><span class="hover"></span></li>
-      <li><a class="navbar-link" href="/teams">Our Teams</a><span class="hover"></span></li>
-      <li><a class="navbar-link" href="/contact">Contact</a><span class="hover"></span></li>
+      <li><a class="navbar-link <%= (currentPage === 'aboutus') ? 'active' : '' %>" href="/aboutus">About Us</a><span class="hover"></span></li>
+      <li><a class="navbar-link <%= (currentPage === 'product') ? 'active' : '' %>" href="/products">Products</a><span class="hover"></span></li>
+      <li><a class="navbar-link <%= (currentPage === 'team') ? 'active' : '' %>" href="/teams">Our Teams</a><span class="hover"></span></li>
+      <li><a class="navbar-link <%= (currentPage === 'contactus') ? 'active' : '' %>" href="/contact">Contact Us</a><span class="hover"></span></li>
     </ul>
   </div>
   </div>

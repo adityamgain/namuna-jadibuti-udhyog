@@ -54,7 +54,7 @@ html, body {
   }
   .navbar-link.active {
     font-weight: bold;
-    color: #FFF;
+    color: #FFF !important;
 }
   
   .nav li {
@@ -69,7 +69,7 @@ html, body {
     box-shadow: none !important;
     border: none !important;
   }
-  
+
   .navbar-inverse .navbar-toggle:hover,
   .navbar-inverse .navbar-toggle:focus,
   .navbar-inverse .navbar-toggle:active {
@@ -92,7 +92,12 @@ html, body {
   }
 
   
+
+  
   @media (max-width: 767px) {
+    .navbar-collapse{
+      background-color: #222b31d5 ;
+    }
     .navbar-brand {
       font-size: 14px !important;
     }
@@ -107,6 +112,9 @@ html, body {
   }
   
   @media (max-width: 480px) {
+    .navbar-collapse{
+      background-color: #222b31d5 ;
+    }
     .navbar-brand {
       font-size: 12px !important;
     }

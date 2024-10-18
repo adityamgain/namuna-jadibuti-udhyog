@@ -61,7 +61,7 @@
 
 
 .excursion-description {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -150,7 +150,7 @@
 
     /* Excursion Description */
     .excursion-description {
-        font-size: 1rem; /* Smaller description size */
+        font-size: 1.4rem; /* Smaller description size */
     }
 
     /* Button Font Size */
@@ -173,6 +173,13 @@
         font-size: 2.5rem; /* Further reduce title size */
     }
 
+    .excursion-wrapper {
+        max-width: 80%;
+        margin-bottom: 4%;
+        flex-direction: column; /* Stack vertically */
+        height: auto; /* Allow auto height for flexibility */
+    }
+
     .excursion-image img {
         width: 100%;
         height: 150px;
@@ -186,7 +193,7 @@
 
     /* Excursion Description */
     .excursion-description {
-        font-size: 0.9rem; /* Further reduce description size */
+        font-size: 1rem; /* Further reduce description size */
     }
 
     /* Button Font Size */
