@@ -21,7 +21,7 @@ html, body {
 }
 
 .section-title {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Sniglet", system-ui;
     font-size: 4rem;
     font-weight: 500;
     color: #98a869;

@@ -47,7 +47,7 @@ body {
 }
 
 .section-about h2{
-  font-family: "Orbitron", sans-serif;
+  font-family: "Capriola", sans-serif;
   font-size: 4rem;
   font-weight: 500;
     color:#98a869 ;
@@ -55,13 +55,13 @@ body {
 
 .section-about h3{
   color: #505c2c;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Capriola", sans-serif;
   font-weight: 400;
 }
 
 .section-about strong{
   color: #505c2c;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Capriola", sans-serif;
   font-size: 1.8rem;
 
 }

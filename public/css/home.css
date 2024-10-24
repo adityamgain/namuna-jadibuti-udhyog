@@ -80,20 +80,20 @@
 }
 
 .column2 strong{
-    font-family: "Orbitron", sans-serif;
+    font-family: "Capriola", sans-serif;
     color: #505c2c;
 }
 
 .column1 h3{
     color:#98a869 ;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Capriola", sans-serif;
     font-size: 4rem;
     font-weight: 500;
 }
 
 .columna h3{
     color:#98a869 ;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Capriola", sans-serif;
     font-size: 4rem;
     font-weight: 500;
 }
@@ -180,7 +180,7 @@
 }
 
 .card-text {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Capriola", sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
     color:#222B31;
@@ -198,7 +198,7 @@
       margin-top: 0;
     padding-left:2%;
     color:#98a869 ;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Capriola", sans-serif;
     font-size: 4rem;
     font-weight: 500;
     text-align: center;
@@ -234,7 +234,7 @@
   
   .sustainability-key-points strong{
     color: #505c2c;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Capriola", sans-serif;
   } 
 
   .svg-section{
@@ -268,7 +268,7 @@
 .flowchart h3{
     color:#98a869 ;
     padding-top:4%;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Capriola", sans-serif;
     font-size: 4rem;
     font-weight: 500;
 }
@@ -429,7 +429,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 
 .heading {
     color:#98a869 ;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Capriola", sans-serif;
     font-size: 4rem;
     font-weight: 500;
 	line-height: 1.5;
@@ -473,7 +473,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -482,12 +482,14 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.863); /* Black with opacity */
   }
-  
+
+
+
   .modal-content {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 900px;
     transition: transform 0.3s ease;
   }
   
@@ -498,18 +500,17 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
   
   .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: rgb(255, 251, 251) !important; /* Change color to white */
+    top: 20px;
+    right: 40px;
+    color: rgb(255, 255, 255) !important; /* Change color to white */
     font-size: 100px; /* Increase the font size */
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
   }
   
   .close:hover,
   .close:focus {
-    color: #f1f1f1; /* Slightly lighter white on hover */
+    color: #ffffff; /* Slightly lighter white on hover */
     text-decoration: none;
     cursor: pointer;
   }
