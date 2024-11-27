@@ -80,26 +80,29 @@
 }
 
 .column2 strong{
-    font-family: "Capriola", sans-serif;
+    font-family: "Signika", sans-serif;
     color: #505c2c;
 }
 
 .column1 h3{
     color:#98a869 ;
-    font-family: "Capriola", sans-serif;
+    font-family: "Signika", sans-serif;
     font-size: 4rem;
     font-weight: 500;
 }
 
 .columna h3{
     color:#98a869 ;
-    font-family: "Capriola", sans-serif;
+    font-family: "Signika", sans-serif;
     font-size: 4rem;
     font-weight: 500;
 }
 
 .column3 img{
     width:60%;
+    max-width: 100%;
+    object-fit: cover;
+
 }
 
 .two-column-section {
@@ -198,7 +201,7 @@
       margin-top: 0;
     padding-left:2%;
     color:#98a869 ;
-    font-family: "Capriola", sans-serif;
+    font-family: "Signika", sans-serif;
     font-size: 4rem;
     font-weight: 500;
     text-align: center;
@@ -234,8 +237,8 @@
   
   .sustainability-key-points strong{
     color: #505c2c;
-    font-family: "Capriola", sans-serif;
-  } 
+    font-family: "Signika", sans-serif;
+} 
 
   .svg-section{
       background-color: rgb(247, 252, 243);
@@ -268,7 +271,7 @@
 .flowchart h3{
     color:#98a869 ;
     padding-top:4%;
-    font-family: "Capriola", sans-serif;
+    font-family: "Signika", sans-serif;
     font-size: 4rem;
     font-weight: 500;
 }
@@ -276,7 +279,7 @@
 .flowchart img{
     padding:2%;
     margin-bottom: 4%;
-    width:60%;
+    width:50%;
 }
 
 /* Media Queries for Tablets */
@@ -396,10 +399,7 @@
     .column1 h3{
         font-size: 2.5rem;
     }
-
 }
-
-
 
 /* gallery section */
 
@@ -429,7 +429,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 
 .heading {
     color:#98a869 ;
-    font-family: "Capriola", sans-serif;
+    font-family: "Signika", sans-serif;
     font-size: 4rem;
     font-weight: 500;
 	line-height: 1.5;
@@ -482,7 +482,6 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.863); /* Black with opacity */
   }
-
 
 
   .modal-content {

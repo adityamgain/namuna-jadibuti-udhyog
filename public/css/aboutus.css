@@ -46,8 +46,12 @@ body {
 
 }
 
+.content{
+  padding-left:5%;
+}
+
 .section-about h2{
-  font-family: "Capriola", sans-serif;
+  font-family: "Signika", sans-serif;
   font-size: 4rem;
   font-weight: 500;
     color:#98a869 ;
@@ -55,15 +59,84 @@ body {
 
 .section-about h3{
   color: #505c2c;
-  font-family: "Capriola", sans-serif;
+  font-family: "Signika", sans-serif;
   font-weight: 400;
 }
 
 .section-about strong{
   color: #505c2c;
-  font-family: "Capriola", sans-serif;
+  font-family: "Signika", sans-serif;
   font-size: 1.8rem;
 
+}
+
+
+.photo-gallery {
+  position: relative;
+  max-width: 950px;
+  margin: 20px auto;
+  overflow: hidden; /* Ensure the slider doesn't overflow */
+}
+
+.photo-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Photos */
+.photo {
+  min-width: 100%; /* Each photo takes full width of the container */
+  transition: transform 0.5s ease-in-out;
+}
+
+.photo img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .photo-slider {
+      width: 200%; /* Allow for multiple photos to be displayed */
+  }
+
+  .photo {
+      min-width: 50%; /* Two photos per view on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo-slider {
+      width: 300%; /* Allow for three photos to be displayed */
+  }
+
+  .photo {
+      min-width: 33.33%; /* Three photos per view on larger screens */
+  }
 }
 
 
@@ -112,7 +185,7 @@ body {
   }
   
   .timeline .event:before {
-    left: -177.5px;
+    left: -150.5px;
     color: #2f3941;
     content: attr(data-date);
     text-align: right;
@@ -122,7 +195,7 @@ body {
   
   .timeline .event:after {
     box-shadow: 0 0 0 8px #98a869;
-    left: -30px;
+    left: -10px;
     background: rgb(247, 252, 243);
     border-radius: 50%;
     height: 11px;
@@ -135,11 +208,10 @@ body {
       color:#2f3941;
   }
 
-.main-container img{
+.image-intro img{
     margin:1%;
-    width:30%;
+    width:18%;
 }
-
 
 .top-page {
   position: relative;
@@ -166,6 +238,29 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.supported-by {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.supported-by h3 {
+  font-size: 1.8rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.support-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.support-logo {
+  max-width: 120px;
+  height: auto;
 }
 
   /**/
@@ -199,6 +294,9 @@ body {
     .intro img{
       width:35%;
   }
+  .support-logo {
+    max-width: 100px;
+  }
   }
   
   @media (max-width: 768px) {
@@ -224,6 +322,9 @@ body {
     }
     .timeline p {
       padding-top: 20px;
+    }
+    .support-logo {
+      max-width: 80px;
     }
   }
 

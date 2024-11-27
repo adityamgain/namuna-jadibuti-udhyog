@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs-mate": "^4.0.0",
     "express": "^4.21.0",
     "method-override": "^3.0.0",

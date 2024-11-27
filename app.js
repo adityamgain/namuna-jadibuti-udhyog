@@ -5,6 +5,8 @@ const methodOverride = require('method-override');
 
 const app = express();
 
+require('dotenv').config();
+
 
 const hostname = 'localhost';
 app.engine('ejs',ejsMate);
@@ -17,10 +19,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 app.get('/', async(req, res) => {
     res.render('home',{currentPage: 'none' });
-  });
+});
 
 app.get('/aboutus', async(req, res) => {
   res.render('aboutus',{currentPage: 'aboutus' });
@@ -32,10 +33,11 @@ app.get('/products', async(req, res) => {
 
 app.get('/teams', async(req, res) => {
     res.render('teams',{ currentPage: 'team' });
-  });
+});
 
 app.get('/contact', async(req, res) => {
-    res.render('contacts',{ currentPage: 'contactus' });
+    const key=process.env.FORM_TO_MAIL;
+    res.render('contacts',{ key,currentPage: 'contactus' });
 });
 
 app.listen(4001, () => {

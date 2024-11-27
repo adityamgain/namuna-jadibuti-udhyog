@@ -13,6 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet"></head>
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Coiny&family=Itim&family=Quando&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 <!-- Include Navbar Partial -->
@@ -33,18 +38,34 @@
                 <p>Namuna Jadibuti Udhyog is committed to organic production practices and sustainability, ensuring that all the herbs cultivated are free from harmful chemicals. The goal is to foster the well-being of consumers through nature-based products, while also contributing to the local economy by creating employment opportunities.
                 <p>With an initial investment of NPR 68.50 lakh, the business has set out clear strategies to gradually increase its production capacity and reach new markets, capitalizing on the rising demand for herbal and organic products.          
             </div>
-            <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332522/IMG_9784_efyicj.jpg" alt="">
-            <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332521/IMG_9772_pqa6kg.jpg" alt="">
-            <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332519/IMG_9777_zlo5f0.jpg" alt="">
+
+            <div class="photo-gallery" data-gallery="1">
+                <div class="photo-slider">
+                    <!-- Slides for Gallery 1 -->
+                    <div class="photo">
+                        <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1732031237/IMG_2070_th9e9g.jpg" alt="">
+                    </div>
+                    <div class="photo">
+                        <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1727332521/IMG_9772_pqa6kg.jpg" alt="">
+                    </div>
+                    <div class="photo">
+                        <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1732030564/IMG_2061_hcmtb7.jpg" alt="">
+                    </div>
+                </div>
+                    <button class="prev-btn" onclick="prevSlide(0)">&#10094;</button>
+                    <button class="next-btn" onclick="nextSlide(0)">&#10095;</button>
+            </div>
 
         <div class="section-about">
         <h2>Vision</h2>
+        <div class="content">
         <p>
             To be a leader in the global market for organic herbal products, recognized for delivering high-quality, sustainable, 
             and naturally sourced herbal remedies that promote health, wellness, and environmental sustainability. 
             Namuna Jadibuti Udhyog envisions contributing to the resurgence of traditional medicinal practices while creating 
             an eco-friendly and socially responsible enterprise that supports the wellbeing of communities and ecosystems.
         </p>
+        </div>
     </div>
 
     <div class="section-about">
@@ -60,6 +81,7 @@
 
     <div class="section-about">
         <h2>Impact</h2>
+        <div class="content">
         <h3>Economic Impact</h3>
         <p>
             Namuna Jadibuti Udhyog will create employment opportunities, boost local economies by sourcing herbs locally, 
@@ -78,9 +100,11 @@
             By employing sustainable farming techniques, the company minimizes environmental degradation and promotes 
             biodiversity conservation. It reduces its carbon footprint by localizing production and contributing to soil and water conservation efforts.
         </p>
+        </div>
     </div>
     <div class="section-about">
         <h2>Future Plan</h2>
+        <div class="content">
             <p>
                 Namuna Jadibuti Udhyog is poised for significant growth and expansion in the coming years. The company plans to strengthen its presence in the domestic market while exploring international opportunities. Future initiatives will focus on expanding the product portfolio, leveraging advanced technology for efficiency, and enhancing sustainability efforts. By promoting organic farming practices, improving production capacity, and embracing eco-friendly innovations, Namuna Jadibuti Udhyog aims to become a global leader in the herbal products industry, making a positive impact on both local communities and the environment.
             </p>
@@ -98,7 +122,7 @@
               <br>Financial projections estimate growth with sales reaching NPR 154,500 by the end of 2025 and NPR 185,400 by 2026.
               <br>Marketing efforts expand beyond Nepal to international markets.
             </li>
-            <li class="event" data-date="2025/26/27">
+            <li class="event" data-date="2025-27">
               <h3>Financial Production Milestone</h3>
               <p><b>2025:</b> Sales growth of 36% as the business penetrates new markets.
               <br><b>2026-2027:</b> Significant investment in advanced processing equipment and scaling production to meet export demands. Expected sales increase by 20-25% annually.
@@ -115,11 +139,20 @@
             Namuna Jadibuti Udhyog has laid a strong foundation with its focus on organic herbal products and sustainable practices. The company has made significant strides in its initial setup and expansion phases, establishing itself as a key player in Nepal’s herbal product industry. With a clear roadmap for the future, the business is set to grow further by tapping into international markets, expanding its product range, and continuously innovating through advanced technology. Namuna Jadibuti Udhyog remains committed to promoting health and wellness through nature-based solutions, while contributing to the economic and environmental well-being of its community. The journey ahead promises growth, impact, and a positive change towards a more sustainable future.
             </p><br>
     </div>
+    </div>
+
+            <div class="supported-by">
+      <h3>Supported By</h3>
+      <div class="support-logos">
+        <img src="https://res.cloudinary.com/dgdbgblvb/image/upload/v1729760364/ANSAB_logo_small.bmp" alt="Support Logo 1" class="support-logo">
+      </div>
+    </div>
         </div>
       </div>
     </div>
   </section>
 </div>
+
 
         <div class="top-page">
             <div class="top-image"> 
@@ -134,7 +167,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="/js/script.js"></script>
+
+<script src="/js/photo.js"></script>
+<script src="/js/script.js"></script>
 
 </body>
 </html>

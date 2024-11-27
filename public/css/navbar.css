@@ -90,10 +90,7 @@ html, body {
     z-index: 0;
     opacity: 0;
   }
-
-  
-
-  
+ 
   @media (max-width: 767px) {
     .navbar-collapse{
       background-color: #222b31d5 ;
